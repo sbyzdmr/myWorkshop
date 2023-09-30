@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FORMLAR</title>
+</head>
+<body>
+    <H1>Formlar</H1>
+
+    <form action="">
+        <section>
+          <label for="first-name">Name</label>
+          <input type="text" 
+          id="first-name"  
+           required/>
+          <!-- label ın for uyla input un id sini aynı verip onları bağlıyoruz. required yapınca boş bırakılmaması için doldurma uyarısı veriyor-->
+        </section>
+
+        <br><br>
+      
+        <section>
+            <label for="email">Email</label>
+            <input 
+            type="email" 
+            id="email" 
+            name="email"
+            placeholder="isim@gmail.com" 
+            required />
+        </section>
+        <!-- placeholder silik bir şekilde ne yazılması gerektiğini gösteriyor -->
+<br><br>
+        <section>
+            <label for="password">Password</label>
+            <input type="password" 
+            id="password" 
+            name="password" 
+            placeholder="en az 8 karakter giriniz" 
+            minlength="8"
+            maxlength="12"
+            required />
+        </section>
+<br><br>
+        
+        <section>
+            <label for="Age">Age</label>
+            <input type="number" name="Age" id="Age" required min="0">
+        </section>
+<br><br>
+        <section>
+            <label for="cinsiyet">Cinsiyet:</label> <br>
+            <label for="kadın">Kadın</label>
+            <input type="radio" name="cinsiyet" id="kadın" />
+
+            <label for="erkek">Erkek</label>
+            <input type="radio" name="cinsiyet" id="erkek" />
+        </section>
+<br><br>
+        <section>
+
+            <label for="">Languages:</label> <br>
+
+            <input 
+            type="checkbox"
+            name="Languages"
+            value="Türkçe"
+            id="Languages" 
+            checked/>  Türkçe <br>
+
+            <input 
+            type="checkbox"
+            name="Languages"
+            value="english"
+            id="Languages"
+            checked /> English <br>
+
+            <input 
+            type="checkbox"
+            name="Languages"
+            value="français"
+            id="Languages" 
+            checked/>  Français <br>
+
+            <input 
+            type="checkbox"
+            name="Languages"
+            value="dutch"
+            id="Languages"
+            checked/>  Dutch <br>
+        </section>
+<br><br>
+        <section>
+            <label for="dob">Doğum Tarihi</label>
+            <input type="date" name="dob" id="dob"
+            min="1990-01-01" />
+        </section>
+<br><br>
+        <section>
+            <label for="">Favori Tatlılar</label> <br>
+            <select name="tatlı" id="tatlı">
+                <option value="künefe">Künefe</option>
+                <option value="havuç dilimi">Havuç dilimi</option>
+                <option value="kazandibi">Kazandibi</option>
+                <option value="pasta">Pasta</option>
+            </select>
+        </section>
+<br><br>
+        <section>
+            <label for="yorum">Yorumlarınızı Giriniz</label> <br>
+            <textarea 
+            name="yorum" 
+            id="yorum" 
+            cols="50" 
+            rows="5"
+            style="resize: none;"
+            maxlength="100"
+            placeholder="En fazla 100 karakter girilebilir">
+        </textarea >
+        </section>
+<br><br>
+        <section>
+            <input type="submit" value="Kaydet"/>
+            <button type="reset" style="width: 50px;
+            color: rgb(15, 14, 14); background-color: rgb(211, 23, 23); align-items: center; border-color: rgb(177, 231, 29);">Sil</button>
+        </section>
+    </form>
+</body> 

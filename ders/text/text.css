@@ -1,0 +1,66 @@
+h1{
+    text-align: center;
+    color: blue;
+}
+
+/* .countainer{
+    font-size: 8px;
+} */
+
+#par1{
+    color: blue;
+    text-align: center;
+    text-shadow: 2px 2px 2px;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif ;
+    font-weight:bold ;
+    column-count: 3; /*yaıyı parçalara bölme*/
+    column-rule: 3px double blue;
+    -webkit-column-count: 3;
+    -moz-column-count: 3px double red;
+    font-size: 1rem;
+    
+}
+#par2{
+    color: red;
+    text-align: right;
+    text-transform: uppercase;
+    direction: ltr;
+    background-color: rgba(0, 0, 0, 0.719);
+    color: white;
+    text-shadow: 2px 2px 5px;
+    padding: 10px;
+    box-shadow: 5px 5px 10px rgb(170, 44, 44);
+    border-radius: 10px; /*kenarı yuvarlama*/
+
+}
+#par3{
+    color: rgb(120, 45,97);
+    text-align: justify;
+     text-decoration: underline; /*altına çizgi */
+}
+#par4{
+    color: hsl(120, 45, 97);
+    text-decoration: line-through wavy; /*üstünü çizme */
+
+}
+#par5{
+    color: fuchsia;
+    text-decoration: overline line-through wavy;
+    /* text-decoration: overline line-through wavy; */
+}
+#par6{
+    background-color: rgba(0, 0, 0, 0.719);
+    color: white;
+    padding: 5px;
+    text-indent: 1rem; /* paragrafı içten başlatma*/
+    letter-spacing: 3px;
+    line-height: 1.5; /* satır arası boşlukaçma*/
+    direction: rtl; /* yazıyı sola yaslama*/
+    unicode-bidi: bidi-override; /* yazıyı terseten başlatma ve kelimleri de tam tersi şekilde yazma (arapça için)
+
+   
+
+
+
+
+}

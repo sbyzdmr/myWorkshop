@@ -1,0 +1,36 @@
+*{
+    /* border: 1px solid red;
+    margin: 0;
+    padding: 0; */
+   
+}
+
+body{
+    /* background-color: chocolate; */
+   background-image: url(https://cdn.pixabay.com/photo/2023/05/18/20/48/swamp-8003229_640.png);  
+  
+ 
+}
+
+h1{
+    color: rgb(77, 77, 133);
+    text-align: center;
+    background-color: rgb(231, 238, 238);
+}
+h1:hover{
+  opacity: 0.5;   /* opaklığını ayarlama */
+ cursor: pointer;   /* mause üzerine gelince parmak işareti çıkarmak için */
+ }
+.list{
+     border: 3px solid black;  /*borde çerçeveleme solid düz çizgi */
+     border-radius: 20%;
+}
+
+li{
+    list-style-type: none; /*  başındaki madde işaretini kaldır demek */
+    color: rgb(12, 40, 133);
+}
+
+ li:hover{  /*hover özelliği mause üzerine geldiğinde ne yapmak istediğimizi ayarlamak */
+   font-weight: 800;   /*  yazıların üzerine geldiğimizde büyüyüp küçültmeye yarıyor */
+}
