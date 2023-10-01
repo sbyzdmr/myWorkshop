@@ -4,7 +4,9 @@
 
 .container{
     background-color: lightsalmon;
-    border: 1px solid red;
+    border: 1px solid red;  /* yukarıdaki kutunun ana ekrandan ayrı olarak hareket edebilmesi için 1px bile olsa border veriyoruz */
+    /* overflow: auto; overflow arka plana verilen height değeri olduğu için sabit kalan alan içerisinde eklediğimiz div lerin kalması için
+    height: 500px; */
 }
 .div1{
     background-color: crimson;
@@ -13,7 +15,7 @@
     border: 2px solid black;
     margin-top:  50px;
     margin: 50px;
-    background-image: ;
+    /* background-image: url(https://picsum.photos/536/354) */
 }
 .div2{
     background-color: aqua;
@@ -29,4 +31,5 @@
     width: 150px;
     height: 150px;
     border: 2px solid black;
+    margin-bottom: 50px;
 }
