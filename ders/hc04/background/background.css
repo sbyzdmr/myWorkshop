@@ -1,0 +1,56 @@
+
+body{
+    background-image: linear-gradient(to right, #ff807777 0%, #ff857a49 0%, #ff8c7f5b 21%, #f990858a 52%, #cf556b91 78%, #b12a5b4d 100%),url(./img/resim-2.jpg);
+    height: 100vh;
+    background-repeat: no-repeat;
+}  
+.container{
+    border: 2px solid red;
+    width: 20rem;
+    height: 22rem;
+    margin: auto;
+    text-align: justify;
+    padding: 10px;
+    border-radius: 10px;
+    overflow: auto;   /*yazının alana sığmadığı durumlarda yazıyı kaydırmak için. scroll oluşturuyoruz. */
+
+
+    /* fotoğraf koyma */
+    /* background-image: url(./img/resim-2.jpg);
+    background-size: cover; /*  tüm alanı kaplaması için cover, fotoğrafın tamamının görünmesi için contain yapıyoruz */
+    /* background-repeat: no-repeat;
+    background-position: center bottom; */ 
+
+    /* renklendirme yapma arka plana */
+    background-image: linear-gradient(to right, rgba(165, 59, 59, 0.486), rgba(68, 68, 170, 0.432)),url(./img/resim-2.jpg);
+    background-size: cover;
+    background-position: center;
+
+    color:orange
+
+}
+
+/* scroll görüntüsünü kaybettirmek için 3 yöntem de kullanılabilir */
+.container::-webkit-scrollbar{
+    display: none; 
+
+    visibility: hidden;
+
+    width: 0;
+}
+
+img{
+    width: 60px;
+}
+
+#img1,#img2,#img3,#img4{
+    opacity: 0.6;
+
+}
+#img1:hover,
+#img2:hover,
+#img3:hover,
+#img4:hover{
+    opacity: 1;
+    transform: scale(1.5);  /*fotoları 1.5 katına büyütüyor üzerine geldiğimizde */
+}
