@@ -1,16 +1,198 @@
 
 
+
 /* MADDE İMİ STİLLERİ */
-ul.Languages{  /*classı lang. olan ul demek*/
-    list-style-type: circle; /*yuvarlak madde*/
-    list-style-type: square;
-    list-style-type: none;
-    list-style-type: lower-latin;
-    list-style-type: disc;
-    list-style-type: georgian;
+ 
+ul.languages{  /*classı lang. olan ul demek*/
+    list-style-type: circle;  /* içi boş yuvarlak madde işareti */
+    list-style-type: square;  /* kare madde işareti */
+    list-style-type: none;     /*  madde işaretini kaldırma */
+    list-style-type: lower-latin; /* a-b-c madde işareti */
+    list-style-type: georgian;    
+    list-style-type: disc;   /* içi dolu yuvarlak madde işareti */
+    
+    /* madde işareti li lerin içinde mi olsun dışında mı */
+    list-style-position: inside;
+
+
+    list-style-image: url(./img/house-solid.svg);
 }
 
-    /* MADDE İMİ Lİ LERİN İÇİNDE Mİ DIŞINDA MI OLSUN */
-    list-style-position: inside;
-    /* padding: 20px; */
+ ul.languages li{  /* ul nin içindeki li ler */
+    background-color: lightblue;
+    margin:5px ;
+    width: 250px;
+    border-radius: 10px;
+    padding-left: 20px;
+    border-left: 5px solid gray;
+   
+}
 
+ul.languages li:hover{
+    background-color: lightcoral;
+    opacity: .5;
+    cursor: pointer;
+}
+
+h2{
+    color:blue ;
+}
+
+h2 i{
+    color: crimson;
+}
+
+.fa-user-graduate{
+    color: rgb(43, 165, 83);
+    font-size: 30px;
+}
+
+
+/*-------- PSUEDO CLASSES--------- */
+
+ul.pseudo li:first-child{
+    color: red;
+}
+
+ul.pseudo li:last-child{
+    color: blue;
+}
+
+ul.pseudo li:nth-child(3){      /* hangi elemanı seçmek istiyorsak parantez içinde onu yazıyoruz */
+    color: orange;
+    background-color: crimson;
+}
+
+ul.pseudo li:nth-child(5){
+    font-size: 30px;
+    font-weight: 900;
+    font-family: fantasy;
+}
+
+ul.pseudo li:nth-child(odd){      /* tek elemanı seçmek istiyorsak parantez içinde onu yazıyoruz */
+   background-color: gray;
+}  
+
+ul.pseudo li:nth-child(even){      /* çift elemanı seçmek istiyorsak parantez içinde onu yazıyoruz */
+    background-color: yellowgreen;
+}
+
+/* ul.pseudo li:not(odd){  çift olamayan elemanı seçmek istiyorsak  
+    color: rgb(0, 153, 255);  
+} */
+
+
+ul.pseudo li:hover{
+    background-color:darkmagenta;
+    color: orange;
+    
+}
+
+ul.pseudo li:active{  /* üzerine tıkladığımızda ne olmasını istiyorsak onu biçimlendiriyoruz */
+    background-color: black;
+    color: white;
+}
+ input:focus{
+    background-color: tomato;
+    color: white;
+    border: 4px dotted white;
+    outline: none;
+ }
+
+ /* ---------LİNK PSEUDO CLASSES------- */
+nav.link a:link{    /* ziyaret edilmemiş link anlamına geliyor*/
+    color:red;
+}
+nav.link a:visited{   /* ziyaret edilince dönecek renk */
+    color: rgb(26, 128, 0);
+}
+nav.link a:active{
+    color: magenta;
+}
+nav.link a:active{  /* mause a tıklanıldığı süre boyunca olan renk */
+    color: lightseagreen;
+}
+nav.link a:hover{
+    color: orange;
+}
+
+nav.cw a{
+    text-decoration: none;
+    border: 2px solid darkorange;
+    padding: 5px;
+    margin: 10px;
+    color: darkorange;
+    border-radius: 10px;
+}
+nav.cw a:hover{
+    background-color: gray;
+    color: white;
+}
+
+ nav.cw a:hover i{   /*a nın hoverın da i değişsin istiyorsak */
+    color:red;
+}
+ nav.cw a i{
+    margin: 5px;
+    font-size: 1.1rem;
+    color: gray;
+ }
+
+ nav.cw a i:hover{
+    color:darkorange ;
+ }
+
+ span{
+   background-color: gray;
+   margin: 10px; 
+   margin-top: 50px;
+   display: inline-block; /* ya da inline-block olunca margin ve padding ten etkileniyor */
+   height: 100px;
+   width: 100px;
+   padding: 100px;
+ }
+
+ /* ---------PSEUDO ELEMENTS------- */
+  .p-elements::first-line{  /*ilk satırı seçiyoruz */
+    color:red;
+ }
+
+ .p-elements::first-letter{   /* ilk harfi seçiyoruz */
+    font-size: 30px; 
+ }
+
+ ul.before-after{
+    list-style-type: none;
+   
+ }
+ ul.before-after li{
+    background-color: coral;
+    margin: 5px;
+    width: 40%;
+    border-radius: 10px;
+   
+ }
+
+ ul.before-after li:hover{
+    background-color: skyblue;
+
+
+
+ }    
+ul.before-after li::before{
+    content: "🎇";
+    margin: 10px;
+}
+ul.before-after li:nth-child(2)::before{
+    content: "\1F451";
+}
+
+ul.before-after li:last-child::after{
+    content: "🚗";
+    margin: 10px;
+}
+
+ul.before-after li:nth-child(3):hover::after{
+    content: "🏁";
+    margin: 10px;
+}    
