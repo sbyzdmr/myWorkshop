@@ -1,0 +1,35 @@
+
+
+.box{
+   border: 5px solid olive; 
+   margin-bottom: 4rem;
+   width: 20rem;
+   height: 4rem;
+   background-color: bisque;
+   text-align: center;
+}
+.box1{
+   overflow: visible;   /* hiçbir şey değişmez taşma varsa */
+}
+.box2{
+   overflow: hidden;   /* taşma varsa taşan kısmı gizler */
+}
+.box3{
+   overflow: scroll;    /* taşma varsa scroll yapılabilir */
+}
+.box4{
+  overflow: auto;     /* içerik küçükse scroll çıkmaz. içerik arttıkça scroll yapılabilir */
+}
+
+.box4::-webkit-scrollbar{  /*  scroll barın gözükmemesini sağlamak için */
+/* width: 0; */
+/* visibility: hidden; */
+display: none;
+}
+.box5{
+    overflow-x: scroll;
+    overflow-y: scroll;
+}
+.paragraf{
+
+}
