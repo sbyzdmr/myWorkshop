@@ -1,0 +1,44 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Inter", sans-serif;
+}
+
+
+
+header{
+    display: flex;
+    justify-content:space-between ;
+    align-items: center;
+    background-color: white;
+    margin: 0 1rem;
+}
+header.logo{
+    display: flex;
+    align-items: center;
+}
+header.logo img{
+    width: 60px; 
+    height: 60px;
+}
+header.vector p{
+    display: inline-block;
+    padding: 1rem;
+}
+header.vector p i{
+    width: 10px;
+}
+
+nav{
+    background-color: rgb(32, 136, 159);
+    display: flex;
+    justify-content: space-between;
+    align-items:center ;
+    color: white;
+}
+
+nav h2{
+    font-family: "kenia", cursive;
+    font-size: ;
+}
