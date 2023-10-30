@@ -1,0 +1,95 @@
+*{
+    box-sizing:border-box ;
+    margin: 0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-weight: 600;
+}
+
+nav{
+    /* border: 2px solid red; */
+    background-color: rgb(245, 152, 152);
+    display: flex;
+    justify-content: center; /*çalışılan kutuları ortaladık*/
+    text-align: center;  /*yazıları ortaya aldık*/
+    align-items: center;
+}
+
+nav .left,
+nav .right,
+nav .middle{
+    width: 33%;
+    /* border: 2px solid red; */
+}
+
+nav .left{
+    flex: 1;
+    background-color: #bcccdc;
+    box-shadow: 2px 2px 5px black;
+    display: flex;
+    justify-content:center;
+    align-items: center;
+    height: 250px;
+
+}
+nav .right{
+    flex: 1;
+    background-color: #bcccdc;
+    box-shadow: 2px 2px 5px black;
+    border-radius: 10px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+    height: 250px;
+}
+nav .middle{
+    flex: 1;
+    background-color: #bcccdc;
+    box-shadow: 2px 2px 5px black;
+    border-radius: 10px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 1rem;
+    z-index: 1;
+    align-items: center;
+    height: 250px;
+}
+
+nav .middle .item{
+    text-decoration: none;
+    font-size: 1rem;
+    padding: 1rem;
+}
+
+nav .right i{
+    color: black;
+    font-size:2rem;
+}
+
+
+header{
+    /* border: 2px solid red; */
+    display: flex;
+    gap: 1rem;
+    margin-top: 50px;
+}
+
+.img{
+    /* border: 2px solid blue; */
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.img img{
+    width: 100%;
+}
+.text{
+    /* border: 2px solid blue; */
+    flex: 1;
+    line-height: 2;
+    background-image: url("https://picsum.photos/id/564/600/400");
+    background-size: cover ;
+
+}
